@@ -1,0 +1,69 @@
+.about {
+    background-color: var(--secondary);
+}
+
+.about-container {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-box {
+    width: 100%;
+    min-height: 600px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+
+    background-color: var(--background-card);
+    border-radius: 16px;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.10),
+        0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+.about-content {
+    max-width: 430px;
+    width: 100%;
+    position: relative;
+    padding-left: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.about-content::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.3em;
+    width: 4px;
+    height: 100%;
+    background-color: var(--primary);
+    border-radius: 2px;
+}
+
+.about-title {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 56px;
+    color: var(--primary);
+    font-weight: 500;
+}
+
+.about-text {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.about-picture img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+}

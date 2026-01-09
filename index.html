@@ -3,33 +3,341 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/favicon/icons-s.png">
     <title>Sarah Picenni</title>
     
     <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/user.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/hard-skills.css">
+    <link rel="stylesheet" href="styles/carousel.css">
+    <link rel="stylesheet" href="styles/soft-skills.css">
+    <link rel="stylesheet" href="styles/projects.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,500;1,500&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 <body>
     <div class="app">
-        <section class="user">
-            <div class="container">
-
-            </div>
-        </section>
-
-        <section class="about">
-            <div class="container">
-
-            </div>
-        </section>
-
-        <section class="projects">
-            <div class="container">
+        <header>
+            <div class="header-content container">
+                <picture>
+                    <a href="#user">
+                        <img src="assets/name.png" width="210" alt="">
+                    </a>
+                </picture>
                 
+                <ul class="menu">
+                    <li class="menu-item">
+                        <a href="#about" class="menu-item-link">SOBRE MIM</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#skills" class="menu-item-link">SKILLS</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#projects" class="menu-item-link">PROJETOS</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#contact" class="menu-item-link">CONTATO</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <section class="user" id="user">
+            <div class="user-container container">
+                <div class="user-content">
+                    <p class="user-hello">Olá! Eu me chamo</p>
+                    <picture>
+                        <img src="assets/name.png" width="500" alt="">
+                    </picture>
+                    <div class="user-yellow-box">
+                        <p class="user-box-content">Desenvolvedora Back-end</p>
+                    </div>
+                </div>
+
+                <picture>
+                    <img class="icon" src="assets/icon.png" alt="" width="400">
+                </picture> 
             </div>
         </section>
+
+        <section class="about" id="about">
+            <div class="about-container container">
+                <div class="about-box">
+                    <div class="about-content">
+                        <p class="about-title">Sobre mim</p>
+                        <p class="about-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque libero pariatur ab magni, deserunt necessitatibus a, id harum est nostrum at vitae, eligendi incidunt sit. Tempore cumque ipsam natus amet?
+                        </p>
+                    </div>
+                    <picture class="about-picture">
+                        <img class="icon" src="assets/icon-formatura.png" alt="">
+                    </picture>
+                </div>
+            </div>
+        </section>
+
+        <section class="hard-skills" id="skills">
+            <div class="hs-container container">
+                <div class="hs-content">
+                    <div class="ss-title">
+                        <p>Minhas habilidades com tecnologia</p>
+                    </div>
+                    <div class="hs-elements">
+                        <div class="hs-box">
+                            <div class="hs-box-title">
+                                <p>Back-end</p>
+                            </div>
+                            <div class="hs-box-content">
+                                <img src="assets/svgs/java.svg" width="44" alt="">
+                                <p>Java</p>
+                            </div>
+                            <div class="hs-box-content">
+                                <img src="assets/svgs/python.svg" width="44" alt="">
+                                <p>Python</p>
+                            </div>
+                        </div>
+                        <div class="hs-box">
+                            <div class="hs-box-title">
+                                <p>Banco de dados</p>
+                            </div>
+                            <div class="hs-box-content">
+                                <img src="assets/svgs/sql.svg" width="44" alt="">
+                                <p>SQL</p>
+                            </div>
+                            <div class="hs-box-content">
+                                <img src="assets/svgs/mysql.svg" width="44" alt="">
+                                <p>MySQL</p>
+                            </div>
+                            <div class="hs-box-content">
+                                <img src="assets/svgs/pgsql.svg" width="44" alt="">
+                                <p>PostgreSQL</p>
+                            </div>
+                            <div class="hs-box-content">
+                                <img src="assets/svgs/modeling.svg" width="44" alt="">
+                                <p>Modelagem relacional</p>
+                            </div>
+                        </div>
+                        <div class="hs-box">
+                            <div class="hs-box-title">
+                                <p>Ferramentas</p>
+                            </div>
+                            <div class="hs-box-content">
+                                <img src="assets/svgs/git.svg" width="44" alt="">
+                                <p>Git</p>
+                            </div>
+                            <div class="hs-box-content">
+                                <img src="assets/svgs/maven.svg" width="44" alt="">
+                                <p>Maven</p>
+                            </div>
+                            <div class="hs-box-content">
+                                <img src="assets/svgs/junit.svg" width="44" alt="">
+                                <p>JUnit</p>
+                            </div>
+                            <div class="hs-box-content">
+                                <img src="assets/svgs/figma.svg" width="44" alt="">
+                                <p>Figma</p>
+                            </div>
+                        </div>
+                        <div class="hs-box">
+                            <div class="hs-box-title">
+                                <p>Me aventuro</p>
+                            </div>
+                            <div class="hs-box-content">
+                                <img src="assets/svgs/html.svg" width="44" alt="">
+                                <p>HTML</p>
+                            </div>
+                            <div class="hs-box-content">
+                                <img src="assets/svgs/css.svg" width="44" alt="">
+                                <p>CSS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel">
+                <div class="carousel-track">
+                    <img src="assets/svgs/java.svg" width="44" alt="">
+                    <img src="assets/svgs/python.svg" width="44" alt="">
+                    <img src="assets/svgs/sql.svg" width="44" alt="">
+                    <img src="assets/svgs/mysql.svg" width="44" alt="">
+                    <img src="assets/svgs/pgsql.svg" width="44" alt="">
+                    <img src="assets/svgs/modeling.svg" width="44" alt="">
+                    <img src="assets/svgs/git.svg" width="44" alt="">
+                    <img src="assets/svgs/maven.svg" width="44" alt="">
+                    <img src="assets/svgs/junit.svg" width="44" alt="">
+                    <img src="assets/svgs/figma.svg" width="44" alt="">
+                    <img src="assets/svgs/html.svg" width="44" alt="">
+                    <img src="assets/svgs/css.svg" width="44" alt="">
+                    <img src="assets/svgs/java.svg" width="44" alt="">
+                    <img src="assets/svgs/python.svg" width="44" alt="">
+                    <img src="assets/svgs/sql.svg" width="44" alt="">
+                    <img src="assets/svgs/mysql.svg" width="44" alt="">
+                    <img src="assets/svgs/pgsql.svg" width="44" alt="">
+                    <img src="assets/svgs/modeling.svg" width="44" alt="">
+                    <img src="assets/svgs/git.svg" width="44" alt="">
+                    <img src="assets/svgs/maven.svg" width="44" alt="">
+                    <img src="assets/svgs/junit.svg" width="44" alt="">
+                    <img src="assets/svgs/figma.svg" width="44" alt="">
+                    <img src="assets/svgs/html.svg" width="44" alt="">
+                    <img src="assets/svgs/css.svg" width="44" alt="">
+                    <img src="assets/svgs/java.svg" width="44" alt="">
+                    <img src="assets/svgs/python.svg" width="44" alt="">
+                    <img src="assets/svgs/sql.svg" width="44" alt="">
+                    <img src="assets/svgs/mysql.svg" width="44" alt="">
+                    <img src="assets/svgs/pgsql.svg" width="44" alt="">
+                    <img src="assets/svgs/modeling.svg" width="44" alt="">
+                    <img src="assets/svgs/git.svg" width="44" alt="">
+                    <img src="assets/svgs/maven.svg" width="44" alt="">
+                    <img src="assets/svgs/junit.svg" width="44" alt="">
+                    <img src="assets/svgs/figma.svg" width="44" alt="">
+                    <img src="assets/svgs/html.svg" width="44" alt="">
+                    <img src="assets/svgs/css.svg" width="44" alt="">
+                    <img src="assets/svgs/java.svg" width="44" alt="">
+                    <img src="assets/svgs/python.svg" width="44" alt="">
+                    <img src="assets/svgs/sql.svg" width="44" alt="">
+                    <img src="assets/svgs/mysql.svg" width="44" alt="">
+                    <img src="assets/svgs/pgsql.svg" width="44" alt="">
+                    <img src="assets/svgs/modeling.svg" width="44" alt="">
+                    <img src="assets/svgs/git.svg" width="44" alt="">
+                    <img src="assets/svgs/maven.svg" width="44" alt="">
+                    <img src="assets/svgs/junit.svg" width="44" alt="">
+                    <img src="assets/svgs/figma.svg" width="44" alt="">
+                    <img src="assets/svgs/html.svg" width="44" alt="">
+                    <img src="assets/svgs/css.svg" width="44" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="soft-skills">
+            <div class="ss-container container">
+                <div class="ss-content">
+                    <div class="ss-title">
+                        <p>Qual o meu diferencial?</p>
+                    </div>
+
+                    <div class="ss-elements">
+                        <div class="ss-box">
+                            <div class="ss-box-icon">
+                                <picture>
+                                    <img src="assets/svgs/lampada.svg" width="43" alt="">
+                                </picture>
+                            </div>
+                            <p class="ss-box-title">Aprendizado contínuo</p>
+                            <div class="ss-box-text">
+                                <p>
+                                    Busco evoluir constantemente, estudando novas tecnologias, inclusive explorando algumas menos conhecidas, e aprimorando soluções já existentes. 
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="ss-box">
+                            <div class="ss-box-icon">
+                                <picture>
+                                    <img src="assets/svgs/alvo.svg" width="43" alt="">
+                                </picture>
+                            </div>
+                            <p class="ss-box-title">Resolução de problemas</p>
+                            <div class="ss-box-text">
+                                <p>
+                                    Encaro desafios de forma analítica, transformando problemas em soluções claras e eficientes.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="ss-box">
+                            <div class="ss-box-icon">
+                                <picture>
+                                    <img src="assets/svgs/engrenagem.svg" width="43" alt="">
+                                </picture>
+                            </div>
+                            <p class="ss-box-title">Pensamento sistêmico</p>
+                            <div class="ss-box-text">
+                                <p>
+                                    Analiso o sistema como um todo, observando como cada parte se comportará em conjunto, e levando sempre em consideração manutenção, escalabilidade e performance.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <div class="projects-container container">
+                <div class="projects-content">
+                    <div class="projects-title">
+                        <p>O que eu já desenvolvi</p>
+                    </div>
+                    <div class="projects-grid">
+                        <div class="projects-box">
+
+                        </div>
+                        <div class="projects-box">
+                            
+                        </div>
+                        <div class="projects-box">
+                            
+                        </div>
+                        <div class="projects-box">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="contact-container container">
+                <div class="contact-box">
+                    <div class="contact-text">
+                        <p class="contact-title">Vamos conversar?</p>
+                        <p class="contact-found">Você pode me encontrar nas redes sociais</p>
+                    </div>
+                    <div class="contact-social">
+                        <div class="social">
+                            <a href="https://www.linkedin.com/in/sarah-picenni">
+                                <img src="assets/svgs/linkedin.svg" width="42" alt="">
+                                <p>LinkedIn</p>
+                            </a>
+                        </div>
+                        <div class="social">
+                            <a href="https://github.com/sapicenn">
+                                <img src="assets/svgs/github.svg" width="35" alt="">
+                                <p>GitHub</p>
+                            </a>
+                        </div>
+                        <div class="social">
+                            <a href="https://mail.google.com/mail/?view=cm&to=sarahpicenni3@gmail.com">
+                                <img src="assets/svgs/email.svg" width="34" alt="">
+                                <p>E-mail</p>
+                            </a>
+                        </div>
+                        <div class="social">
+                            <a href="https://www.instagram.com/sapicenni/">
+                                <img src="assets/svgs/instagram.svg" width="35" alt="">
+                                <p>Instagram</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-container container">
+                <p>© 2026 · Desenvolvido por Sarah Picenni de Oliveira </p>
+            </div>
+        </footer>
+
     </div>
+
 </body>
 </html>
