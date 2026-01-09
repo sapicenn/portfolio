@@ -3,20 +3,25 @@
 }
 
 .hs-container {
-    min-height: 100vh;
+    min-height: calc(100vh - 70px);
     padding-top: 90px;
+
+    display: flex;
+    justify-content: center;
 }
 
 .hs-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    gap: 9.5rem;
+    align-items: center;
+    height: 100%;
+    width: 100%;
 }
 
 .hs-title {
     display: flex;
     justify-content: center;
-    margin-bottom: 4rem;
     position: relative;
 }
 
@@ -42,10 +47,9 @@
 }
 
 .hs-elements {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
 }
 
 .hs-box {
@@ -88,4 +92,11 @@
 .hs-box-content p {
     font-size: 18px;
     font-family: "Josefin Sans", sans-serif;
+}
+
+.hs-box-content img {
+    max-width: 44px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
 }

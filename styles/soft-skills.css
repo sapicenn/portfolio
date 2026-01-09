@@ -3,20 +3,21 @@
 }
 
 .ss-container {
-    min-width: 100%;
-    height: 100vh;
-    
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .ss-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: 100%;
+    gap: 9.5rem
 }
 
 .ss-elements {
+    flex: 1;
     display: flex;
     justify-content: center;
     gap: 110px;
@@ -29,8 +30,9 @@
     padding-top: 20px;
 
     background-color: var(--background-card);
-    width: 270px;
-    height: 340px;
+    width: 100%;
+    max-width: 270px;
+    min-height: 340px;
     border-radius: 16px;
     box-shadow:
         0 12px 30px rgba(0, 0, 0, 0.10),
@@ -40,7 +42,6 @@
 .ss-title {
     display: flex;
     justify-content: center;
-    margin-bottom: 200px;
     position: relative;
 }
 
@@ -72,8 +73,16 @@
     align-items: center;
     justify-content: center;
     
-    width: 53px;
-    height: 53px;
+    max-width: 53px;
+    width: 100%;
+    min-height: 53px;
+}
+
+.ss-icon img {
+    max-width: 43px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
 }
 
 .ss-box-title {
@@ -81,12 +90,15 @@
     font-size: 20px;
     font-weight: bold;
     color: var(--primary);
-
-    padding-top: 20px;
+    padding: 20px 4px 0 4px;
 }
 
 .ss-box-text {
     padding: 10px 30px;
+}
+
+.ss-box-text p {
+    flex-wrap: wrap;
 }
 
 .ss-box-text p {
