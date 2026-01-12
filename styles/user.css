@@ -45,6 +45,10 @@
     align-items: center;
 }
 
+.user-yellow-box p {
+    text-align: center;
+}
+
 .user-box-content {
     font-family: "Josefin Sans", sans-serif;
     color: white;

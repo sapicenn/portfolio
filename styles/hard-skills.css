@@ -21,8 +21,11 @@
 
 .hs-title {
     display: flex;
-    justify-content: center;
     position: relative;
+}
+
+.hs-title {
+    text-align: center;
 }
 
 .hs-title p::after {

@@ -1,0 +1,136 @@
+@media(max-width: 920px) {
+    .hs-elements {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hs-content {
+        margin-bottom: 5rem;
+    }
+}
+
+@media(max-width: 800px) {
+    .menu {
+        display: none;
+    }
+
+    .user .user-container {
+        flex-direction: column;
+        gap: 35px;
+        justify-content: center;
+    }
+
+    .icon, .about-picture img {
+        max-width: 300px;
+        width: 100%;
+        height: auto;
+    }
+
+    .about-box {
+        flex-direction: column;
+        padding: 30px 0 30px 0;
+    }
+
+    .about-title, .hs-title, .ss-title, .projects-title {
+        font-size: 38px;
+    }
+
+    .about-text {
+        font-size: 17px;
+        margin-right: 15px;
+    }
+
+    .about-content::before {
+        margin-left: 15px;
+    }
+
+    .hs-container {
+        padding-top: 15px;
+    }
+
+    .hs-content {
+        gap: 5.5rem;
+    }
+
+    .hs-elements {
+        grid-template-columns: 1fr;
+    }
+
+    .hs-box {
+        max-width: 230px;
+        width: 100%;
+        min-height: auto;
+    }
+
+    .hs-box-content img {
+        max-width: 38px;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1/1;
+    }
+
+    .hs-box-content p {
+        font-size: 16px;
+    }
+
+    .carousel {
+        margin: 7rem 0 7rem;
+    }
+
+    .carousel img {
+        max-width: 38px;
+    }
+
+    .ss-content {
+        gap: 5.5rem;
+    }
+
+    .ss-elements {
+        grid-template-columns: 1fr;
+        margin-bottom: 3.5rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        padding-top: 5.5rem;
+        gap: 4rem;
+    }
+
+    .projects-box {
+        width: 100%;
+        max-width: 320px;
+        min-height: 245px;
+    }
+
+    .contact-box {
+        flex-direction: column;
+        width: 90%;
+        min-height: 560px;
+    }
+
+    .contact-text {
+        padding-left: 20px;
+        gap: 12px;
+    }
+
+    .contact-title {
+        font-size: 30px;
+    }
+
+    .contact-found {
+        font-size: 20px;
+    }
+
+    .social p {
+        font-size: 20px;
+    }
+
+    .social a img {
+        width: 100%;
+        max-width: 38px;
+        height: auto;
+    }
+
+    .footer-container p {
+        font-size: 12px;
+    }
+}

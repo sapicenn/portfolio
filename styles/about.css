@@ -12,7 +12,7 @@
 }
 
 .about-box {
-    width: 100%;
+    width: 95%;
     min-height: 600px;
 
     display: flex;
@@ -59,11 +59,27 @@
 .about-text {
     font-family: "Josefin Sans", sans-serif;
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 400;
+    color: #414141;
+    text-align: justify;
 }
 
 .about-picture img {
     max-width: 400px;
     width: 100%;
     height: auto;
+}
+
+button {
+    background-color: var(--box-color);
+    max-width: 115px;
+    width: 100%;
+    min-height: 45px;
+
+    font-size: 15px;
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bold;
+    border: 0;
+    border-radius: 16px;
 }

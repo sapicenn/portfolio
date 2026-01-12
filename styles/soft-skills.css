@@ -18,9 +18,9 @@
 
 .ss-elements {
     flex: 1;
-    display: flex;
-    justify-content: center;
-    gap: 110px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
 }
 
 .ss-box {
@@ -64,6 +64,7 @@
     font-family: "Cormorant Garamond", serif;
     font-weight: 500;
     position: relative;
+    text-align: center;
 }
 
 .ss-box-icon {
@@ -91,14 +92,11 @@
     font-weight: bold;
     color: var(--primary);
     padding: 20px 4px 0 4px;
+    text-align: center;
 }
 
 .ss-box-text {
     padding: 10px 30px;
-}
-
-.ss-box-text p {
-    flex-wrap: wrap;
 }
 
 .ss-box-text p {
@@ -107,4 +105,5 @@
     font-size: 17px;
     font-weight: 400;
     line-height: 1.4;
+    text-align: center;
 }
