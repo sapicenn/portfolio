@@ -25,3 +25,15 @@ header {
     font-family: "Josefin Sans", sans-serif;
     font-weight: bold;
 }
+
+.menu-burger {
+    display: none;
+}
+
+.menu-burger img {
+    width: 100%;
+    max-width: 40px;
+    height: auto;
+    color: white;
+    cursor: pointer;
+}
