@@ -43,22 +43,91 @@
 }
 
 .projects-grid {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    grid-template-columns: repeat(2, 1fr);
     gap: 6.25rem;
     padding-top: 7.18rem;
-    justify-items: center;
+    align-items: center;
 }
 
 .projects-box {
     width: 100%;
-    max-width: 450px;
-    min-height: 350px;
+    max-width: 700px;
+    min-height: 250px;
     background-color: var(--primary);
     border-radius: 16px;
 
     box-shadow:
         0 20px 50px rgba(0, 0, 0, 0.14),
         0 8px 18px rgba(0, 0, 0, 0.10);
+
+    display: flex;
+    align-items: center;
+    padding: 32px;
+}
+
+.project-img {
+    width: 100%;
+    max-width: 165px;
+    height: 165px;
+    background-color: #1E1F22;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin-right: 20px;
+}
+
+.project-img img {
+    width: 100%;
+    max-width: 165px;
+    height: auto;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.project-title {
+    font-size: 26px;
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bold;
+}
+
+.project-disc {
+    color: white;
+    font-size: 17px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 350;
+    text-align: justify;
+}
+
+.project-button {
+    width: 100%;
+    max-width: 115px;
+    min-height: 35px;
+
+    background-color: black;
+    color: white;
+    font-size: 10px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 600;
+    border: 0;
+    cursor: pointer;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.project-button img {
+    width: 100%;
+    max-width: 23px;
+    height: auto;
 }

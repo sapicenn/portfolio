@@ -123,7 +123,6 @@
     }
 
     .projects-grid {
-        grid-template-columns: 1fr;
         padding-top: 5.5rem;
         gap: 4rem;
     }
@@ -131,7 +130,36 @@
     .projects-box {
         width: 100%;
         max-width: 320px;
-        min-height: 245px;
+        min-height: 300px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .project-img img {
+        max-width: 130px;
+    }
+
+    .project-img {
+        max-width: 130px;
+        height: 130px;
+    }
+
+    .project {
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .project-title {
+        font-size: 19px;
+    }
+
+    .project-disc {
+        font-size: 14px;
+    }
+
+    .project-img {
+        margin-right: 0;
     }
 
     .contact-box {
