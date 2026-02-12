@@ -158,6 +158,15 @@
         font-size: 14px;
     }
 
+    .github-button, .figma-button {
+        max-width: 100%;
+        width: 100px;
+    }
+
+    .github-button img, .figma-button img {
+        width: 18px;
+    }
+
     .project-img {
         margin-right: 0;
     }

@@ -71,13 +71,16 @@
     width: 100%;
     max-width: 165px;
     height: 165px;
-    background-color: #1E1F22;
     
     display: flex;
     align-items: center;
     justify-content: center;
     
     margin-right: 20px;
+}
+
+.project-img-bibli {
+    background-color: #1E1F22;
 }
 
 .project-img img {
@@ -107,7 +110,12 @@
     text-align: justify;
 }
 
-.project-button {
+.project-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.github-button {
     width: 100%;
     max-width: 115px;
     min-height: 35px;
@@ -126,7 +134,32 @@
     justify-content: space-evenly;
 }
 
-.project-button img {
+.github-button img {
+    width: 100%;
+    max-width: 23px;
+    height: auto;
+}
+
+.figma-button {
+    width: 100%;
+    max-width: 115px;
+    min-height: 35px;
+
+    background-color: rgb(75, 11, 136);
+    color: white;
+    font-size: 10px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 600;
+    border: 0;
+    cursor: pointer;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.figma-button img {
     width: 100%;
     max-width: 23px;
     height: auto;
