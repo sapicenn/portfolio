@@ -83,6 +83,10 @@
     background-color: #1E1F22;
 }
 
+.project-img-tcc {
+    background-color: white;
+}
+
 .project-img img {
     width: 100%;
     max-width: 165px;
@@ -162,6 +166,32 @@
 }
 
 .figma-button img {
+    width: 100%;
+    max-width: 23px;
+    height: auto;
+}
+
+.deploy-button {
+    width: 100%;
+    max-width: 115px;
+    min-height: 35px;
+
+    background-color: var(--icons-color);
+    color: white;
+    font-size: 10px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 600;
+    border: 0;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 2px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.deploy-button img {
     width: 100%;
     max-width: 23px;
     height: auto;

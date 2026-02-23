@@ -158,13 +158,19 @@
         font-size: 14px;
     }
 
-    .github-button, .figma-button {
+    .github-button, .figma-button, .deploy-button {
         max-width: 100%;
         width: 100px;
     }
 
-    .github-button img, .figma-button img {
+    .github-button img, .figma-button img, .deploy-button img {
         width: 18px;
+    }
+
+    .buttons-column {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .project-img {
