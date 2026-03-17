@@ -87,6 +87,10 @@
     background-color: white;
 }
 
+.project-img-calc {
+    background-color: rgb(244, 244, 244);
+}
+
 .project-img img {
     width: 100%;
     max-width: 165px;
